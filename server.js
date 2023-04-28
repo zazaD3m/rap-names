@@ -1,7 +1,9 @@
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 8000;
+const cors = require("cors");
 
+app.use(cors());
 const rappers = {
     "21 savage": {
         birthName: "savage Name",
